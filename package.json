@@ -4,8 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js"
+    "start": "node app.js",
+    "build": "echo 'No build step defined'",
+    "test": "echo 'No tests defined' && exit 0",
+    "dev": "nodemon app.js",
+    "lint": "eslint ."
   },
   "keywords": [],
   "author": "",
