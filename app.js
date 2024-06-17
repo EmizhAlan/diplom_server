@@ -14,7 +14,7 @@ const PORT = process.env.PORT || 5000;
 app.use(cors());
 app.use(express.json());
 
-mongoose.connect('mongodb://localhost:27017/granat', {
+mongoose.connect('mongodb+srv://dzedunmao346:tAkt4hGMuxelXdcc@grantapp.y4yzhdu.mongodb.net/?retryWrites=true&w=majority&appName=grantapp', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
