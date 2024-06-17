@@ -6,6 +6,7 @@ const cors = require('cors');
 const User = require('./models/user');
 const Order = require('./models/order');
 const nodemailer = require('nodemailer');
+const path = require('path');
 
 
 const app = express();
@@ -15,8 +16,8 @@ app.use(cors());
 app.use(express.json());
 
 mongoose.connect('mongodb+srv://dzedunmao346:tAkt4hGMuxelXdcc@grantapp.y4yzhdu.mongodb.net/?retryWrites=true&w=majority&appName=grantapp', {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
+  //useNewUrlParser: true,
+  //useUnifiedTopology: true,
 });
 
 app.use(express.static(path.join(__dirname, 'public')));
